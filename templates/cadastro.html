@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='cadastro.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="div_cadastro_painel">
+
+            <div id="div_title">
+                <h3 id="title">Cadastro</h3>
+            </div>
+
+            <form id="form_cadastro" action="#">
+                <div id="nome_completo">
+                    <label for="full_name">Nome Completo</label>
+                    <input type="text" name="full_name" id="full_name" placeholder="Primeiro e último nome" required>
+                </div>
+                <div id="div_data">
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+                <div id="div_matricula">
+                    <label for="matricula">Número de matrícula</label>
+                    <input type="text" name="matricula" id="matricula" placeholder="xxxxxxxxxxx" required>
+                </div>
+                <div id="div_curso">
+                    <label for="curso">Curso</label>
+                    <select name="curso" id="curso">
+                        <option value="cc">Ciência da Computação</option>
+                        <option value="ec">Engenharia da Computação</option>
+                        <option value="si">Sistemas de Informação</option>
+                    </select>
+                </div>
+                <div id="div_email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="teste@teste.com" required>
+                </div>
+                <div id="div_senha">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="********" required>
+                </div>
+                <div id="div_confirmar_senha">
+                    <label for="confirmar_senha">Confirmar Senha</label>
+                    <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="********" required>
+                </div>
+                <div id="div_termos">
+                    <input type="checkbox" id="box_termos"><a href="#" id="termos">Lí e aceito todos os termos</a>
+                </div>
+                <div id="div_create">
+                    <input type="submit" id="button_create" value="Criar conta">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+#dashboard_graphic_main{
+    position: absolute;
+    top: 22rem;
+    min-height: 15rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.1);
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#h2_curso{
+    color: rgba(0,0,0,.7);
+}
+
+#informations_datas{
+    display: none;
+}
+
+@media (min-width: 300px){
+    #dashboard_graphic_main{
+        height: 1rem;
+        width: 15rem;
+        border-radius: 10px;
+        background-color: #f7f7f7;
+        box-shadow: 0px 1px 1px rgba(0,0,0,.1);
+        padding: 0;
+    }
+}
+
+@media (min-width: 400px){
+    #dashboard_graphic_main{
+        height: 5rem;
+        width: 25rem;
+    }
+}
+
+@media (min-width: 500px){
+    #dashboard_graphic_main{
+        height: 10rem;
+        width: 30rem;
+    }
+}
+
+@media (min-width: 600px){
+    #dashboard_graphic_main{
+        height: 15rem;
+        width: 35rem;
+    }
+}
+
+@media (min-width: 800px){
+    #dashboard_graphic_main{
+        height: 16rem;
+        width: 40rem;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (min-width: 1000px){
+    #informations_datas{
+        position: absolute;
+        background-color: #ffffff;
+        height: 85%;
+        width: 90%;
+        left: 5%;
+        top: 15%;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,.05);
+        overflow-y: scroll;
+        padding: 1rem;
+        display: initial;
+    }
+    #tabela_informations_dashboard{
+        width: 100%;
+        height: 100%;
+        color: rgba(0,0,0,.8);
+    }
+    .line_principal_of_table{
+        background-color: rgba(64,224,208, .5);
+    }
+    
+    .line_secondary_table{
+        background-color: rgba(64,224,208, .2);
+    }
+    #dashboard_graphic_main{
+        height: 17rem;
+        width: 40rem;
+    }
+}
+
+@media (min-width: 1350px){
+    #dashboard_graphic_main{
+        width: 50rem;
+        height: 20rem;
+    }
+}

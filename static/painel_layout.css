@@ -1,0 +1,68 @@
+#painel_select_causa, #painel_select_intervalo, #painel_select_curso{
+    width: 80%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+#painel_select_causa input, #painel_select_curso input{
+    cursor: pointer;
+}
+
+#painel_select_causa{
+    height: 14rem;
+}
+
+#painel_select_curso{
+    align-items: center;
+    height: 4rem;
+}
+
+#curso_selecionado{
+    background-color: white;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .05);
+    height: 2rem;
+}
+
+#painel_select_intervalo{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#createData{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#create{
+    height: 2.5rem;
+    width: 12rem;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#periodo_inicial, #periodo_final, #select_causa{
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .05);
+    cursor: pointer;
+}
+
+h3{
+    margin-left: 1rem;
+    color: rgba(0, 0, 0, .7);
+}

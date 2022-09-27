@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --theme_page: rgb(162, 139, 243);
+}
+
+body{
+    background-color: var(--theme_page);
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_form_login{
+    position: absolute;
+    width: 30rem;
+    height: 32rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#div_title_page{
+    position: absolute;
+    left: 10%;
+    height: 6rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#title_page{
+    color: rgba(0 , 0, 0, .7);
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#div_usuario, #div_senha, #esqueceu_a_senha, #entrar_criar{
+    position: absolute;
+    width: 80%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#div_usuario{
+    top: 0rem;
+}
+
+#div_senha{
+    top: 7rem;
+}
+
+#esqueceu_a_senha{
+    top: 14rem;
+}
+
+#entrar_criar{
+    top: 16rem;
+}
+
+#form_login{
+    position: absolute;
+    top: 6rem;
+    height: 26rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#esqueceu_a_senha{
+    position: absolute;
+    height: 3rem;
+}
+
+#form_usuario, #form_senha{
+    position: absolute;
+    height: 2rem;
+    width: 20rem;
+    border-radius: 1px;
+    border: 1px solid rgba(0,0,0,.2);
+    background-color: transparent;
+    bottom: 0;
+    padding-left: 15px;
+}
+
+#form_usuario:focus, #form_senha:focus{
+    outline: 1px solid var(--theme_page);    
+}
+
+#div_usuario label, #div_senha label{
+    color: rgba(0 , 0, 0, .6);
+    font-size: 18px;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    z-index: 3;
+}
+
+#esqueceu{
+    color: rgba(0 , 0, 0, .6);
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 3rem;
+}
+
+#entrar_usuario, #criar_usuario{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#entrar, #criar{
+    width: 11rem;
+    height: 2.5rem;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+#criar{
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+#entrar{
+    background-color: dodgerblue;
+    color: white;
+}
+
+#entrar:hover{
+    background-color: dodgerblue;
+    opacity: .8;
+}
+
+#criar:hover{
+    background-color: white;
+    opacity: .8;
+}
