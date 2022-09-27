@@ -20,4 +20,4 @@ def autentica():
     if criar:
         return render_template('cadastro.html')
 
-app.run(debug=True)
+app.run()
