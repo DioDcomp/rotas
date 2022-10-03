@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/principal/template.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/principal/dashboard_main_template.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/principal/visao_geral.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/principal/dashboard_graphics_and_informations.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/principal/painel_layout.css')}}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="{{ url_for('static', filename = 'scripts/routes.js')}}" defer></script>
+    {% block links %}
+    {% endblock %}
+    <title>iCausas</title>
+</head>
+<body>
+    <div id="container">
+        <aside class="dashboard_menu">
+            <img src="{{url_for('static', filename = 'assets/icon_grafico.svg')}}" id="icon_grafico" alt="Principal">
+            <img src="{{url_for('static', filename = 'assets/evolucao.svg')}}" id="evolucao" alt="Evolucao">
+        </aside>
+        <header id="dashboard_header">
+            <h4 id="message_nome_pessoa">Olá, <span id="nome">{{usuario}}</span></h4>
+        </header>
+        {% block conteudo_adm %}
+        {% endblock %}
+    </div>
+</body>
+</html>

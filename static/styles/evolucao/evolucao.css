@@ -1,0 +1,458 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main_evolucao{
+    position: absolute;
+    top: 7rem;
+    min-height: calc(100vh + 5rem);
+    width: 100%;
+}
+
+#div_grafico{
+    position: absolute;
+    top: 85rem;
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_tabela{
+    position: absolute;
+    top: 108rem;
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_ranking{
+    position: absolute;
+    top: 45rem;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_painel{
+    position: absolute;
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#painel, #ranking{
+    position: relative;
+    height: 40rem;
+    width: 15rem;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+}
+
+#ranking{
+    width: 20rem;
+}
+
+#painel{
+    width: 40rem;
+    height: 40rem;
+}
+
+#grafico, #tabela{
+    position: relative;
+    height: 20rem;
+    width: 50rem;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+}
+
+#div_curso{
+    position: absolute;
+    top: 4rem;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_materia{
+    position: absolute;
+    top: 7rem;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_button{
+    position: absolute;
+    top: 30rem;
+    height: 5rem;
+    width: 100%;
+}
+
+#select_curso{
+    position: absolute;
+    height: 2.5rem;
+    width: 14rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 2px;
+    color: rgba(0, 0, 0, .7);
+    outline: none;
+}
+
+#select_materia{
+    height: 2.5rem;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+
+#list_materias{
+    position: absolute;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 14rem;
+    min-height: 2.5rem;
+    max-height: 20rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    overflow-y: scroll;
+    z-index: -1;
+    background-color: white;
+}
+
+#div_periodos{
+    position: absolute;
+    top: 20rem;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#div_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gerar_informatios{
+    height: 2.5rem;
+    width: 13rem;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#inicial_periodo, #final_periodo{
+    height: 2.5rem;
+    width: 6rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+#inicio, #final{
+    color: rgba(0, 0, 0, .7);
+}
+
+.materias, .causas{
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+
+#div_causas{
+    width: 100%;
+    height: 5rem;
+    flex-wrap: wrap;
+}
+
+#select_causa{
+    position: absolute;
+    width: 14rem;
+    height: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+
+#list_causa{
+    position: absolute;
+    top: 4rem;
+    width: 17rem;
+    min-height: 2.5rem;
+    max-height: 10rem;
+    overflow-y: scroll;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 2px;
+    background-color: white;
+    z-index: -1;
+}
+
+@media (min-width: 600px){
+    #main_evolucao{
+        position: absolute;
+        top: 7rem;
+        min-height: calc(100vh + 5rem);
+        width: 100%;
+    }
+
+    #div_grafico{
+        position: absolute;
+        top: 65rem;
+        height: 25rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #div_tabela{
+        position: absolute;
+        top: 88rem;
+        height: 25rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #div_ranking{
+        position: absolute;
+        top: 25rem;
+        width: 100%;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #div_painel{
+        position: absolute;
+        width: 100%;
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #painel, #ranking{
+        position: relative;
+        height: 40rem;
+        width: 15rem;
+        background-color: white;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+    }
+
+    #ranking{
+        width: 20rem;
+    }
+
+    #painel{
+        width: 40rem;
+        height: 20rem;
+    }
+    
+    #grafico, #tabela{
+        position: relative;
+        height: 20rem;
+        width: 50rem;
+        background-color: white;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+    }
+    
+    #div_curso{
+        position: absolute;
+        top: 4rem;
+        height: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #div_materia{
+        position: absolute;
+        top: 13rem;
+        height: 15rem;
+        width: 100%;
+    }
+    
+    #div_button{
+        position: absolute;
+        top: 30rem;
+        height: 5rem;
+        width: 100%;
+    }
+    
+    #select_curso{
+        height: 2.5rem;
+        width: 14rem;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, .3);
+        border-radius: 2px;
+        color: rgba(0, 0, 0, .7);
+        outline: none;
+    }
+
+}
+
+@media (min-width: 1200px){
+    #main_evolucao{
+        position: absolute;
+        top: 7rem;
+        left: 8rem;
+        height: calc(100% - 10rem);
+        width: calc(100% - 10rem);
+    }
+
+    #div_grafico{
+        position: absolute;
+        top: 0rem;
+        height: 25rem;
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #div_tabela{
+        position: absolute;
+        top: 25rem;
+        height: 25rem;
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #div_ranking{
+        position: absolute;
+        top: 0rem;
+        left: 55%;
+        width: 25%;
+        height: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #div_painel{
+        position: absolute;
+        left: 80%;
+        width: 20%;
+        height: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #painel, #ranking{
+        position: relative;
+        height: 25rem;
+        width: 15rem;
+        background-color: white;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+    }
+
+    #painel{
+        width: 20rem;
+    }
+
+    #ranking{
+        height: 40rem;
+    }
+    
+    #grafico, #tabela{
+        position: relative;
+        height: 20rem;
+        width: 50rem;
+        background-color: white;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+    }
+    
+    #div_curso{
+        position: absolute;
+        top: 2rem;
+        height: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #div_materia{
+        position: absolute;
+        top: 9rem;
+        height: 5rem;
+        width: 100%;
+    }
+    
+    #div_button{
+        position: absolute;
+        top: 18rem;
+        height: 5rem;
+        width: 100%;
+    }
+    
+    #select_curso{
+        height: 2.5rem;
+        width: 14rem;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, .3);
+        border-radius: 2px;
+        color: rgba(0, 0, 0, .7);
+        outline: none;
+        display: flex;
+    }
+
+    #div_periodos{
+        top: 15rem;
+        width: 70%;
+        left: 15%;
+    }
+
+    #div_causas{
+        position: absolute;
+        top: 5.5rem;
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

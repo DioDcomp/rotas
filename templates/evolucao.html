@@ -1,0 +1,60 @@
+{% extends 'base_page_adm.html' %}
+
+{% block links %}
+    <script src="{{ url_for('static', filename='scripts/evolucao/evolucao.js')}}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/evolucao/evolucao.css')}}">
+{% endblock %}
+
+{% block conteudo_adm %}
+
+    <main id="main_evolucao">
+
+        <div id="div_grafico">
+            <div id="grafico"></div>
+        </div>
+        <div id="div_tabela">
+            <div id="tabela"></div>
+        </div>
+        <div id="div_ranking">
+            <div id="ranking"></div>
+        </div>
+        <div id="div_painel">
+            <div id="painel">
+                <div id="div_curso">
+                    <select name="select_curso" id="select_curso">
+                        <option value="cc">Ciência da Computação</option>
+                        <option value="si">Sistemas de Informação</option>
+                        <option value="ec">Engenharia da Computação</option>
+                    </select>
+                </div>
+                <div id="div_materia">
+                    <div id="select_materia">Selecione uma matéria</div>
+                    <div id="list_materias">
+                        <div id="option_materia">
+                            <input type="checkbox" name="init_check" id="init_check">
+                            <label for="init_check" id="name_materia">Init</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="div_causas">
+                    <div id="select_causa">Selecione as informações</div>
+                    <div id="list_causa">
+                        <div id="option_causa">
+                            <input type="checkbox" name="init_check_causa" id="init_check_causa">
+                            <label for="init_check_causa" id="name_causa">Init</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="div_periodos">
+                    <select id="inicial_periodo"><option id="inicio">Início</option></select>
+                    <select id="final_periodo"><option id="final">Fim</option></select>
+                </div>
+                <div id="div_button">
+                    <input type="submit" value="Gerar informações" id="gerar_informatios">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+{% endblock %}
